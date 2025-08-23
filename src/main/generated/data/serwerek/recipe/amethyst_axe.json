@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": "minecraft:amethyst_shard",
+    "c": "minecraft:amethyst_cluster",
+    "w": "serwerek:wither_bone"
+  },
+  "pattern": [
+    "ca",
+    "aw",
+    " w"
+  ],
+  "result": {
+    "count": 1,
+    "id": "serwerek:amethyst_axe"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-14 22:07:02 +0200"
+    },
+    "done": true
+  },
+  "minecraft:nether/netherite_armor": {
+    "criteria": {
+      "netherite_armor": "2025-08-14 22:07:02 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2025-08-18 01:29:49 +0200",
+      "minecraft:snowy_plains": "2025-08-14 22:07:03 +0200",
+      "minecraft:snowy_beach": "2025-08-14 22:08:17 +0200",
+      "minecraft:plains": "2025-08-18 01:29:43 +0200"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-08-14 22:07:21 +0200"
+    },
+    "done": true
+  },
+  "serwerek:recipes/combat/ender_sword": {
+    "criteria": {
+      "has_breeze_rod": "2025-08-14 22:07:28 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/wind_charge": {
+    "criteria": {
+      "has_breeze_rod": "2025-08-14 22:07:28 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/mace": {
+    "criteria": {
+      "has_breeze_rod": "2025-08-14 22:07:28 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2025-08-14 22:07:29 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ender_chest": {
+    "criteria": {
+      "has_ender_eye": "2025-08-14 22:07:29 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/green_dye": {
+    "criteria": {
+      "has_cactus": "2025-08-14 22:08:15 +0200"
+    },
+    "done": true
+  },
+  "DataVersion": 4440
+}

@@ -1,0 +1,46 @@
+{
+  "itemGroup.serwerek": "Serwerek",
+
+  "item.when_used": "§7When used:",
+  "item.after_hit": "§7After hit:",
+  "item.after_mine_log": "§7After log is mined:",
+
+  "item.serwerek.ender_sword": "Ender Sword",
+  "item.serwerek.ender_sword.ability1": " §9Teleports the user 10 blocks forward",
+  "item.serwerek.ender_sword.ability2": " §9+15% Experience",
+
+  "item.serwerek.resin_pickaxe": "Resin Pickaxe",
+  "item.serwerek.resin_pickaxe.ability": " §9Allows the user to see nearby ores through walls",
+
+  "item.serwerek.echo_scythe": "Echo Scythe",
+  "item.serwerek.echo_scythe.ability": " §9Heals the user for a small portion of the damage dealt",
+
+  "item.serwerek.cursed_bone_crown": "Cursed Bone Crown",
+  "item.serwerek.cursed_bone_crown.ability1": "§9-33% discount from villagers",
+  "item.serwerek.cursed_bone_crown.ability2": "§9Undead mobs do not attack the user",
+
+  "item.serwerek.shattered_mirror": "Shattered Mirror",
+  "item.serwerek.shattered_mirror.ability1.line1": " §9Turns all negative effects of the user into ",
+  "item.serwerek.shattered_mirror.ability1.line2": " §9   their positive counterparts",
+  "item.serwerek.shattered_mirror.ability2.line1": " §9Turns all positive effects of entities in close",
+  "item.serwerek.shattered_mirror.ability2.line2": " §9   proximity into their negative counterparts",
+
+  "item.serwerek.amethyst_axe": "Amethyst Axe",
+  "item.serwerek.amethyst_axe.ability": " §9Cuts down the entire tree",
+  "item.serwerek.amethyst_axe.active": "§2[Active]",
+
+  "item.serwerek.emerald_fishing_rod": "Emerald Fishing Rod",
+  "item.serwerek.emerald_fishing_rod.ability": " §9Fishes 5 items at once",
+
+  "item.serwerek.obsidian_bow": "Obsidian Bow",
+  "item.serwerek.obsidian_bow.ability": " §9Fires arrows with no gravity",
+
+  "item.serwerek.totem_of_shadows": "Totem of Shadows",
+  "item.serwerek.totem_of_shadows.ability": " §9Saves the user from death and gives invisibility",
+
+  "item.serwerek.heart_of_the_nether": "Heart of The Nether",
+  "item.serwerek.heart_of_the_nether.ability": " §9Gives the user many positive effects",
+
+  "item.serwerek.wither_bone": "Wither Bone",
+  "item.serwerek.warden_soul": "Warden's Soul"
+}

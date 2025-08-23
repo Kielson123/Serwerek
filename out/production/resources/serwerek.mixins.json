@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "com.kielson.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AnvilScreenHandlerMixin",
+    "CraftingScreenHandlerMixin",
+    "DisplayEntityMixin",
+    "EntityMixin",
+    "FishingBobberEntityMixin",
+    "HappyGhastMixin",
+    "ItemMixin",
+    "ItemStackMixin",
+    "LivinEntityMixin",
+    "MobEntityMixin",
+    "PlayerEntityMixin",
+    "VillagerEntityMixin",
+    "WolfEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

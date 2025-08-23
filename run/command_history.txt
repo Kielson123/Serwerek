@@ -1,0 +1,50 @@
+/playsound minecraft:entity.phantom.ambient player @p ~ ~ ~ 0.75 1.5
+/summon minecraft:husk
+/effect give @p minecraft:poison infinite 255
+/summon minecraft:husk
+/effect clear
+/locate structure minecraft:monument
+/tp @s 256 ~ 240
+/enchant @p minecraft:efficiency 4
+/enchant @p minecraft:efficiency 5
+/effect give @e[type=minecraft:happy_ghast] minecraft:speed 10 255
+/kill
+/effect give @p minecraft:levitation 90 0 true
+/time set day
+/summon minecraft:zombie
+/time set day
+/summon minecraft:husk
+/effect give @p minecraft:saturation
+/effect give @p minecraft:saturation 2
+/effect give @p minecraft:saturation 2 5
+/summon minecraft:husk
+/enchant @p minecraft:multishot
+/data get entity @p
+/time set day
+/give @p diamond[minecraft:custom_data={"broken":1b}]
+/give @p elytra[minecraft:custom_data={"broken":1b}]
+/give @p serwerek:shattered_mirror[minecraft:damage=152]
+/xp set 10000
+/xp set @p 1000
+/xp set @p 10 levels
+/time set day
+/give @p serwerek:shattered_mirror[minecraft:damage=151]
+/give @p serwerek:shattered_mirror[minecraft:damage=152]
+/give @p minecraft:elytra[minecraft:damage=152]
+/give @p minecraft:elytra[minecraft:damage=432]
+/give @p minecraft:elytra[minecraft:damage=431]
+/give @p minecraft:elytra[minecraft:damage=432]
+/give @p minecraft:elytra[minecraft:damage=430]
+/give @p minecraft:elytra[minecraft:damage=431]
+/give @p serwerek:heart_of_nether[minecraft:repairable=]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=10, minecraft:damage=9]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=4, minecraft:damage=3]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=2, minecraft:damage=1]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=3, minecraft:damage=1]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=3, minecraft:damage=2]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=3, minecraft:damage=3]
+/give @p serwerek:heart_of_nether[repairable={items:"nether_star"}, minecraft:max_damage=4, minecraft:damage=3]
+/give @p serwerek:heart_of_the_nether[repairable={items:"nether_star"}, minecraft:max_damage=4, minecraft:damage=3]
+/data get entity @p
+/effect give @p minecraft:strength 60 255 true

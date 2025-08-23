@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "b": "minecraft:blaze_powder",
+    "e": "minecraft:emerald_block",
+    "h": "minecraft:honeycomb"
+  },
+  "pattern": [
+    "  e",
+    " eb",
+    "e h"
+  ],
+  "result": {
+    "count": 1,
+    "id": "serwerek:emerald_fishing_rod"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "serwerek:item/obsidian_bow",
+    "textures": {
+        "layer0": "serwerek:item/obsidian_bow_pulling_2"
+    }
+}

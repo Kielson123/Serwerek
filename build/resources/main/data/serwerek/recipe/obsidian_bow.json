@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "c": "minecraft:crying_obsidian",
+    "o": "minecraft:obsidian",
+    "w": "serwerek:wither_bone"
+  },
+  "pattern": [
+    " ow",
+    "c w",
+    " ow"
+  ],
+  "result": {
+    "count": 1,
+    "id": "serwerek:obsidian_bow"
+  }
+}

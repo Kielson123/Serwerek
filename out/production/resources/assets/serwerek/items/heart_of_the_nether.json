@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "serwerek:item/heart_of_the_nether"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "serwerek:item/heart_of_the_nether_broken"
+    },
+    "property": "minecraft:broken"
+  }
+}

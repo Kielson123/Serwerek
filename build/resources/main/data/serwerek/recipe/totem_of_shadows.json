@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": "minecraft:amethyst_shard",
+    "d": "minecraft:deepslate",
+    "s": "serwerek:warden_soul"
+  },
+  "pattern": [
+    " a ",
+    " s ",
+    " d "
+  ],
+  "result": {
+    "count": 1,
+    "id": "serwerek:totem_of_shadows"
+  }
+}

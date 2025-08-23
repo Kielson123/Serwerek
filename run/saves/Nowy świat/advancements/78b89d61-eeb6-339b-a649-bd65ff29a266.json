@@ -1,0 +1,27 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-16 17:53:02 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-08-16 17:53:03 +0200"
+    },
+    "done": false
+  },
+  "serwerek:recipes/misc/shattered_mirror": {
+    "criteria": {
+      "has_tinted_glass": "2025-08-21 15:44:56 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2025-08-21 15:42:39 +0200"
+    },
+    "done": true
+  },
+  "DataVersion": 4440
+}

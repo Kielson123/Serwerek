@@ -1,0 +1,36 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-14 21:37:33 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-14 21:37:53 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie": "2025-08-14 21:38:13 +0200",
+      "minecraft:creeper": "2025-08-14 21:37:53 +0200"
+    },
+    "done": false
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:creeper": "2025-08-14 21:37:53 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:frozen_ocean": "2025-08-14 21:37:34 +0200",
+      "minecraft:snowy_plains": "2025-08-14 21:37:41 +0200",
+      "minecraft:snowy_beach": "2025-08-14 21:37:35 +0200"
+    },
+    "done": false
+  },
+  "DataVersion": 4440
+}

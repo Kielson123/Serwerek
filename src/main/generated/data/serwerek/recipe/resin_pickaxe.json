@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "b": "minecraft:resin_brick",
+    "d": "minecraft:netherite_scrap",
+    "h": "minecraft:stick"
+  },
+  "pattern": [
+    "bdb",
+    " h ",
+    " h "
+  ],
+  "result": {
+    "count": 1,
+    "id": "serwerek:resin_pickaxe"
+  }
+}

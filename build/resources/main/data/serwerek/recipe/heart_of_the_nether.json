@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": "minecraft:nether_star",
+    "w": "minecraft:wither_skeleton_skull"
+  },
+  "pattern": [
+    "sw",
+    "ws"
+  ],
+  "result": {
+    "count": 1,
+    "id": "serwerek:heart_of_the_nether"
+  }
+}

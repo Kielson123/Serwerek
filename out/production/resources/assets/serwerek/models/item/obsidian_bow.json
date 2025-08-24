@@ -1,6 +1,0 @@
-{
-    "parent": "item/bow",
-    "textures": {
-        "layer0": "serwerek:item/obsidian_bow"
-    }
-}

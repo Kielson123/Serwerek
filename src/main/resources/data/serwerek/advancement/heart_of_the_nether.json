@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "serwerek:heart_of_the_nether"
+		},
+		"title": {
+			"translate": "item.serwerek.heart_of_the_nether"
+		},
+		"description": {
+			"translate": "advancement.serwerek.heart_of_the_nether"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "serwerek:root",
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "serwerek:heart_of_the_nether"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crafted"
+		]
+	]
+}

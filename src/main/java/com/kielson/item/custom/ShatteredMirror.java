@@ -28,7 +28,7 @@ public class ShatteredMirror extends Item {
     public ShatteredMirror(Settings settings) {
         super(settings.rarity(Rarity.EPIC)
                 .maxDamage(DURABILITY)
-                .repairable(Items.GILDED_BLACKSTONE)
+                .repairable(Items.TINTED_GLASS)
                 .useCooldown(USE_COOLDOWN));
     }
 

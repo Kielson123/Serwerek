@@ -72,14 +72,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
 
                 createShaped(RecipeCategory.MISC, ModItems.SHATTERED_MIRROR)
-                        .pattern("bgb")
+                        .pattern("ngn")
                         .pattern("gag")
-                        .pattern("bgb")
+                        .pattern("ngn")
                         .input('g', Items.GOLD_BLOCK)
-                        .input('b', Items.GILDED_BLACKSTONE)
+                        .input('n', Items.NETHERITE_SCRAP)
                         .input('a', Items.TINTED_GLASS)
                         .criterion(hasItem(Items.GOLD_BLOCK), conditionsFromItem(Items.GOLD_BLOCK))
-                        .criterion(hasItem(Items.GILDED_BLACKSTONE), conditionsFromItem(Items.GILDED_BLACKSTONE))
+                        .criterion(hasItem(Items.NETHERITE_SCRAP), conditionsFromItem(Items.NETHERITE_SCRAP))
                         .criterion(hasItem(Items.TINTED_GLASS), conditionsFromItem(Items.TINTED_GLASS))
                         .offerTo(exporter);
 

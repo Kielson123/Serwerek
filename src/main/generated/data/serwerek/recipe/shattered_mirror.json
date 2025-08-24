@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "a": "minecraft:tinted_glass",
-    "b": "minecraft:gilded_blackstone",
-    "g": "minecraft:gold_block"
+    "g": "minecraft:gold_block",
+    "n": "minecraft:netherite_scrap"
   },
   "pattern": [
-    "bgb",
+    "ngn",
     "gag",
-    "bgb"
+    "ngn"
   ],
   "result": {
     "count": 1,

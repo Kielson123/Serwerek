@@ -11,12 +11,6 @@
     },
     "done": true
   },
-  "serwerek:recipes/combat/ender_sword": {
-    "criteria": {
-      "has_breeze_rod": "2025-08-14 19:58:34 +0200"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/oak_sign": {
     "criteria": {
       "has_planks": "2025-08-14 19:57:57 +0200"
@@ -26,12 +20,6 @@
   "minecraft:recipes/redstone/oak_trapdoor": {
     "criteria": {
       "has_planks": "2025-08-14 19:57:57 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/wind_charge": {
-    "criteria": {
-      "has_breeze_rod": "2025-08-14 19:58:34 +0200"
     },
     "done": true
   },
@@ -56,12 +44,6 @@
   "minecraft:recipes/tools/wooden_pickaxe": {
     "criteria": {
       "has_stick": "2025-08-14 19:57:57 +0200"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/end_crystal": {
-    "criteria": {
-      "has_ender_eye": "2025-08-14 19:58:38 +0200"
     },
     "done": true
   },
@@ -113,12 +95,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/resin_bricks": {
-    "criteria": {
-      "has_resin_brick": "2025-08-14 19:58:28 +0200"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/wooden_sword": {
     "criteria": {
       "has_stick": "2025-08-14 19:57:57 +0200"
@@ -131,15 +107,40 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:snowy_beach": "2025-08-14 19:57:58 +0200"
-    },
-    "done": false
-  },
   "minecraft:recipes/decorations/barrel": {
     "criteria": {
       "has_planks": "2025-08-14 19:57:57 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2025-08-14 19:57:57 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_beach": "2025-08-14 19:57:58 +0200",
+      "minecraft:plains": "2025-08-24 10:08:30 +0200"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/resin_bricks": {
+    "criteria": {
+      "has_resin_brick": "2025-08-14 19:58:28 +0200"
+    },
+    "done": true
+  },
+  "serwerek:recipes/combat/ender_sword": {
+    "criteria": {
+      "has_breeze_rod": "2025-08-14 19:58:34 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/wind_charge": {
+    "criteria": {
+      "has_breeze_rod": "2025-08-14 19:58:34 +0200"
     },
     "done": true
   },
@@ -149,15 +150,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2025-08-14 19:58:38 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/ender_chest": {
     "criteria": {
       "has_ender_eye": "2025-08-14 19:58:38 +0200"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/oak_button": {
+  "serwerek:root": {
     "criteria": {
-      "has_planks": "2025-08-14 19:57:57 +0200"
+      "start": "2025-08-24 10:08:29 +0200"
     },
     "done": true
   },

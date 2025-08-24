@@ -11,5 +11,11 @@
     },
     "done": false
   },
+  "serwerek:root": {
+    "criteria": {
+      "start": "2025-08-24 10:28:35 +0200"
+    },
+    "done": true
+  },
   "DataVersion": 4440
 }

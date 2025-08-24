@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "serwerek:cursed_bone_crown"
+		},
+		"title": {
+			"translate": "item.serwerek.cursed_bone_crown"
+		},
+		"description": {
+			"translate": "advancement.serwerek.cursed_bone_crown"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "serwerek:root",
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "serwerek:cursed_bone_crown"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crafted"
+		]
+	]
+}

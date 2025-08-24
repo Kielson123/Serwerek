@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "serwerek:ender_sword"
+		},
+		"title": {
+			"translate": "item.serwerek.ender_sword"
+		},
+		"description": {
+			"translate": "advancement.serwerek.ender_sword"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "serwerek:root",
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "serwerek:ender_sword"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crafted"
+		]
+	]
+}

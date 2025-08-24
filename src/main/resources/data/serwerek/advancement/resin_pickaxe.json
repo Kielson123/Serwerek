@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "serwerek:resin_pickaxe"
+		},
+		"title": {
+			"translate": "item.serwerek.resin_pickaxe"
+		},
+		"description": {
+			"translate": "advancement.serwerek.resin_pickaxe"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "serwerek:root",
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "serwerek:resin_pickaxe"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crafted"
+		]
+	]
+}

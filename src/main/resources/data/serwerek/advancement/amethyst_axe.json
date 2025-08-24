@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "serwerek:amethyst_axe"
+		},
+		"title": {
+			"translate": "item.serwerek.amethyst_axe"
+		},
+		"description": {
+			"translate": "advancement.serwerek.amethyst_axe"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "serwerek:root",
+	"criteria": {
+		"crafted": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "serwerek:amethyst_axe"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crafted"
+		]
+	]
+}

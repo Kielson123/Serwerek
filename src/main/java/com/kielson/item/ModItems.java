@@ -29,7 +29,6 @@ public class ModItems {
     //goat horn - sonic boom
     //crossbow - load multiple arrows, and fire them all at the same time
     //chestplate - when low HP - gives blindness, weakness, and slowness to nearby entities - long cooldown
-    //backstabbing dagger - 2x the damage from behind
 
     public static final Item[] MOD_ITEMS_HANDHELD = new Item[]{
             ENDER_SWORD, RESIN_PICKAXE, ECHO_SCYTHE, AMETHYST_AXE

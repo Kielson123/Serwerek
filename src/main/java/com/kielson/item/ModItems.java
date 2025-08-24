@@ -10,7 +10,7 @@ import static com.kielson.Serwerek.MOD_ID;
 public class ModItems {
 
     public static final Item WITHER_BONE = ItemHelper.registerItem(MOD_ID, "wither_bone", Item::new, new Item.Settings());
-    public static final Item WARDEN_SOUL = ItemHelper.registerItem(MOD_ID, "warden_soul", Item::new, new Item.Settings().rarity(Rarity.UNCOMMON));
+    public static final Item WARDEN_SOUL = ItemHelper.registerItem(MOD_ID, "warden_soul", Item::new, new Item.Settings().rarity(Rarity.RARE));
 
 
     public static final Item ENDER_SWORD = ItemHelper.registerItem(MOD_ID, "ender_sword", EnderSword::new, new Item.Settings());
@@ -37,7 +37,10 @@ public class ModItems {
             CURSED_BONE_CROWN, EMERALD_FISHING_ROD, OBSIDIAN_BOW, HEART_OF_THE_NETHER
     };
     public static final Item[] MOD_ITEMS_GENERIC = new Item[]{
-            SHATTERED_MIRROR, TOTEM_OF_SHADOWS, WITHER_BONE, WARDEN_SOUL
+            SHATTERED_MIRROR, TOTEM_OF_SHADOWS
+    };
+    public static final Item[] GENERIC = new Item[]{
+            WITHER_BONE, WARDEN_SOUL
     };
 
     public static void initialize(){}

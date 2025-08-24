@@ -1,7 +1,7 @@
 package com.kielson;
 
+import com.kielson.commands.ModCommands;
 import com.kielson.event.ModEvents;
-import com.kielson.event.ModItemTooltips;
 import com.kielson.item.ModItemGroups;
 import com.kielson.item.ModItems;
 import com.kielson.util.ModComponents;
@@ -20,5 +20,6 @@ public class Serwerek implements ModInitializer {
 		ModEvents.initialize();
 		ModTags.initialize();
 		ModComponents.initialize();
+		ModCommands.initialize();
 	}
 }

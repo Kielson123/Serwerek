@@ -24,6 +24,9 @@ public class ModItemGroups {
                 for (Item item : ModItems.MOD_ITEMS_GENERIC) {
                     entries.add(item);
                 }
+                for (Item item : ModItems.GENERIC) {
+                    entries.add(item);
+                }
             }).build());
 
     public static void initialize() {}

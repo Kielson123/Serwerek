@@ -8,6 +8,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.RegistryKeys;
@@ -20,29 +21,34 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 @Mixin(Item.class)
 public abstract class ItemMixin {
 
-    @Inject(method = "onCraft", at = @At("HEAD"))
-    private void disableRecipes(ItemStack stack, World world, CallbackInfo ci){
+    @Inject(method = "onCraftByPlayer", at = @At("HEAD"))
+    private void enableOneRecipe(ItemStack stack, PlayerEntity player, CallbackInfo ci){
         String itemKey = stack.getItem().toString().toLowerCase();
-        Scoreboard scoreboard = world.getScoreboard();
+        Scoreboard scoreboard = player.getWorld().getScoreboard();
         var component = ModComponents.ITEMS_CRAFTED.getNullable(scoreboard);
         assert component != null;
-        ArrayList<String> newList = new ArrayList<>(component.itemsCrafted);
-        if(!newList.contains(itemKey) && stack.isIn(ModTags.MOD_ITEMS)) newList.add(itemKey);
-        component.itemsCrafted = newList;
-
+        Map<String, String> newMap = new HashMap<>(component.itemsCrafted);
+        if(stack.isIn(ModTags.MOD_ITEMS)) newMap.put(itemKey, player.getUuidAsString());
+        component.itemsCrafted = newMap;
 
         if(stack.isOf(ModItems.CURSED_BONE_CROWN)){
-            RegistryEntry<Enchantment> ench = world.getRegistryManager()
+            RegistryEntry<Enchantment> enchantment = player.getWorld().getRegistryManager()
                     .getOrThrow(RegistryKeys.ENCHANTMENT)
                     .getOrThrow(Enchantments.BINDING_CURSE);
 
-            stack.addEnchantment(ench, 1);
+            stack.addEnchantment(enchantment, 1);
         }
+    }
+
+    @Inject(method = "onCraft", at = @At("HEAD"), cancellable = true)
+    private void disableAutomaticRecipes(ItemStack stack, World world, CallbackInfo ci){
+        if(stack.isIn(ModTags.MOD_ITEMS)) ci.cancel();
     }
 
     @Inject(method = "inventoryTick", at = @At("HEAD"))

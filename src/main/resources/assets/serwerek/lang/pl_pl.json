@@ -4,6 +4,10 @@
   "item.when_used": "Kiedy użyto:",
   "item.after_hit": "Po trafieniu:",
   "item.after_mine_log": "Po wydobyciu pnia:",
+  "item.crafting": "Aby stworzyć, potrzebujesz:",
+  "item.repair": "Aby naprawić, potrzebujesz:",
+
+
 
   "item.serwerek.ender_sword": "Endowy miecz",
   "item.serwerek.ender_sword.ability1": "Teleportuje użytkownika 10 bloków do przodu",

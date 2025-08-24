@@ -3,6 +3,5 @@ package com.kielson.event;
 
 public class ModEvents {
 
-    public static void initialize(){
-    }
+    public static void initialize(){}
 }

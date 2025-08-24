@@ -15,6 +15,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
+import java.util.Map;
+
 @Mixin(CraftingScreenHandler.class)
 public class CraftingScreenHandlerMixin {
 
@@ -23,8 +25,9 @@ public class CraftingScreenHandlerMixin {
         ItemStack itemStack = instance.craft(craftingRecipeInput, world.getRegistryManager());
         String itemKey = itemStack.getItem().toString().toLowerCase();
         Scoreboard scoreboard = world.getScoreboard();
+        Map<String, String> itemsCrafted = ModComponents.ITEMS_CRAFTED.get(scoreboard).itemsCrafted;
 
-        if(itemStack.isIn(ModTags.MOD_ITEMS) && ModComponents.ITEMS_CRAFTED.get(scoreboard).itemsCrafted.contains(itemKey) && !world.isClient){
+        if(itemStack.isIn(ModTags.MOD_ITEMS) && !itemsCrafted.getOrDefault(itemKey, "").isBlank() && !world.isClient){
             return ItemStack.EMPTY;
         }
         return itemStack;

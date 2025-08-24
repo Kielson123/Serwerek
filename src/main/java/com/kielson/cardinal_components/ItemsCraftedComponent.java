@@ -11,16 +11,14 @@ import org.jetbrains.annotations.Nullable;
 import org.ladysnake.cca.api.v3.component.ComponentV3;
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class ItemsCraftedComponent implements ComponentV3, AutoSyncedComponent {
-    public List<String> itemsCrafted = new ArrayList<>();;
+    public Map<String, String> itemsCrafted = new HashMap<>();
     private static final String KEY = "items_crafted";
     public static Scoreboard provider;
 
-    private static final Codec<List<String>> CODEC = Codec.list(Codec.STRING).fieldOf(KEY).codec();
+    private static final Codec<Map<String, String>> CODEC = Codec.unboundedMap(Codec.STRING, Codec.STRING);
 
     public ItemsCraftedComponent(Scoreboard provider, @Nullable MinecraftServer server) {
         ItemsCraftedComponent.provider = provider;
@@ -38,9 +36,9 @@ public class ItemsCraftedComponent implements ComponentV3, AutoSyncedComponent {
 
     @Override
     public void readData(ReadView readView) {
-        Optional<List<String>> optional = readView.read(KEY, CODEC);
+        Optional<Map<String, String>> optional = readView.read(KEY, CODEC);
         assert optional.isPresent();
-        itemsCrafted = new ArrayList<>(optional.get());
+        itemsCrafted = new HashMap<>(optional.get());
     }
 
     @Override

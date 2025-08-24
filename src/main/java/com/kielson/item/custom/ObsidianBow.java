@@ -1,6 +1,7 @@
 package com.kielson.item.custom;
 
 import com.kielson.item.CustomBow;
+import com.kielson.item.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.util.Rarity;
@@ -9,7 +10,8 @@ import org.jetbrains.annotations.Nullable;
 public class ObsidianBow extends CustomBow {
     public ObsidianBow(Settings settings) {
         super(9.0,1.0 , 5, settings.rarity(Rarity.EPIC)
-                .maxDamage(576));
+                .maxDamage(576)
+                .repairable(ModItems.WITHER_BONE));
     }
 
     @Override

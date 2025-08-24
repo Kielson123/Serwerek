@@ -13,7 +13,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 @Mixin(Entity.class)
 public class EntityMixin {
@@ -29,9 +30,9 @@ public class EntityMixin {
 
                 var component = ModComponents.ITEMS_CRAFTED.getNullable(scoreboard);
                 assert component != null;
-                ArrayList<String> newList = new ArrayList<>(component.itemsCrafted);
-                newList.remove(itemKey);
-                component.itemsCrafted = newList;
+                Map<String, String> newMap = new HashMap<>(component.itemsCrafted);
+                newMap.remove(itemKey);
+                component.itemsCrafted = newMap;
             }
         }
     }
@@ -46,9 +47,9 @@ public class EntityMixin {
 
                 var component = ModComponents.ITEMS_CRAFTED.getNullable(scoreboard);
                 assert component != null;
-                ArrayList<String> newList = new ArrayList<>(component.itemsCrafted);
-                newList.remove(itemKey);
-                component.itemsCrafted = newList;
+                Map<String, String> newMap = new HashMap<>(component.itemsCrafted);
+                newMap.remove(itemKey);
+                component.itemsCrafted = newMap;
             }
         }
     }
@@ -63,9 +64,9 @@ public class EntityMixin {
 
                 var component = ModComponents.ITEMS_CRAFTED.getNullable(scoreboard);
                 assert component != null;
-                ArrayList<String> newList = new ArrayList<>(component.itemsCrafted);
-                newList.remove(itemKey);
-                component.itemsCrafted = newList;
+                Map<String, String> newMap = new HashMap<>(component.itemsCrafted);
+                newMap.remove(itemKey);
+                component.itemsCrafted = newMap;
             }
         }
     }

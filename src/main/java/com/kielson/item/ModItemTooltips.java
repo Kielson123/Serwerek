@@ -1,6 +1,5 @@
-package com.kielson.event;
+package com.kielson.item;
 
-import com.kielson.item.ModItems;
 import com.kielson.ModTags;
 import com.kielson.util.ModComponents;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;

@@ -26,5 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
         for (Item item : ModItems.MOD_ITEMS_GENERIC) {
             itemModelGenerator.register(item, Models.GENERATED);
         }
+        for (Item item : ModItems.GENERIC) {
+            itemModelGenerator.register(item, Models.GENERATED);
+        }
     }
 }
